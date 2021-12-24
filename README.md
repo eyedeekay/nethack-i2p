@@ -29,6 +29,12 @@ settings I use.
 
 - Fine-tune your settings. : ![Fine-tune tunnel settings](tunnel-tune-1.png)
 
+Then you can connect to the Nethack server by running the command:
+
+```bash
+telnet localhost 7680
+```
+
 If you would rather set up your tunnel by dropping in a configuration file,
 you can use this one: [i2ptunnel-westnoth.conf](i2ptunnel-nethack.conf) or
 copy-paste the section below.
