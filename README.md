@@ -36,12 +36,12 @@ telnet localhost 7680
 ```
 
 If you would rather set up your tunnel by dropping in a configuration file,
-you can use this one: [i2ptunnel-westnoth.conf](i2ptunnel-nethack.conf) or
+you can use this one: [i2ptunnel-nethack.conf](i2ptunnel-nethack.conf) or
 copy-paste the section below.
 
 ```properties
 interface=127.0.0.1
-listenPort=15000
+listenPort=7680
 name=nethack.idk.i2p
 option.i2cp.closeIdleTime=1800000
 option.i2cp.closeOnIdle=false

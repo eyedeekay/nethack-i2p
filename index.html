@@ -58,9 +58,9 @@
 </ul>
 <p>Then you can connect to the Nethack server by running the command:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="ex">telnet</span> localhost 7680</span></code></pre></div>
-<p>If you would rather set up your tunnel by dropping in a configuration file, you can use this one: <a href="i2ptunnel-nethack.conf">i2ptunnel-westnoth.conf</a> or copy-paste the section below.</p>
+<p>If you would rather set up your tunnel by dropping in a configuration file, you can use this one: <a href="i2ptunnel-nethack.conf">i2ptunnel-nethack.conf</a> or copy-paste the section below.</p>
 <pre class="properties"><code>interface=127.0.0.1
-listenPort=15000
+listenPort=7680
 name=nethack.idk.i2p
 option.i2cp.closeIdleTime=1800000
 option.i2cp.closeOnIdle=false
