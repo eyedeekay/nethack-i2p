@@ -1,2 +1,2 @@
-Battle for Wesnoth Server over I2P
-==================================
+Nethack/Dgamelaunch Server over I2P
+===================================
