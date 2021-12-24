@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nethack over I2P</title>
+  <link rel="stylesheet" type="text/css" href ="home.css" />
+</head>
+<body>
+<h1 id="connecting-to-my-nethackdgamelaunch-server">Connecting to my Nethack/DGamelaunch Server</h1>
+<figure>
+<img src="nethack.png" alt="" /><figcaption>nethack Logo</figcaption>
+</figure>
+<p>Running Battle for Multiuser Nethack over I2P is possible using “Standard” streaming tunnels.</p>
+<ol type="1">
+<li>First, set up a client tunnel:</li>
+</ol>
+<ul>
+<li><img src="tunnel-wizard-1.png" title="fig:" alt="Client Tunnel" /></li>
+</ul>
+<ol start="2" type="1">
+<li>Pick a “Standard” tunnel for your tunnel type:</li>
+</ol>
+<ul>
+<li><img src="tunnel-wizard-2.png" title="fig:" alt="Tunnel Type" /></li>
+</ul>
+<ol start="3" type="1">
+<li>Set a tunnel name and description:</li>
+</ol>
+<ul>
+<li><img src="tunnel-wizard-3.png" title="fig:" alt="Tunnel Name and Description" /></li>
+</ul>
+<ol start="4" type="1">
+<li>Enter: <code>zcojbufszefu5bfht5cem3zlhfvv5y3jzpzbaccu3ehje4d7pb2a.b32.i2p</code> as the destination:</li>
+</ol>
+<ul>
+<li><img src="tunnel-wizard-4.png" title="fig:" alt="Tunnel Destination" /></li>
+</ul>
+<ol start="5" type="1">
+<li>Pick a local host and port. This is the port you will <code>telnet</code> to to connect.</li>
+</ol>
+<ul>
+<li><img src="tunnel-wizard-5.png" title="fig:" alt="Local Host and Port" /></li>
+</ul>
+<ol start="6" type="1">
+<li>Decide whether you want the tunnel to start automatically:</li>
+</ol>
+<ul>
+<li><img src="tunnel-wizard-6.png" title="fig:" alt="Decide whether to autostart" /></li>
+</ul>
+<ol start="7" type="1">
+<li>Make sure the settings look ok, and save the new tunnel:</li>
+</ol>
+<ul>
+<li><img src="tunnel-wizard-7.png" title="fig:" alt="Review settings and finish" /></li>
+</ul>
+<p>It may improve performance to reduce the length of your tunnel. Since playing Multiuser Nethack is a mostly low-risk activity, I recommend visiting the <code>nethack.idk.i2p</code> tunnel on the <a href="http://127.0.0.1:7657/i2ptunnelmgr">I2P Tunnel Manager Page, http://127.0.0.1:7657/i2ptunnelmgr</a> and changint the settings to use short, 1-hop tunnels. These are the tunnel settings I use.</p>
+<ul>
+<li>Fine-tune your settings. : <img src="tunnel-tune-1.png" alt="Fine-tune tunnel settings" /></li>
+</ul>
+<p>If you would rather set up your tunnel by dropping in a configuration file, you can use this one: <a href="i2ptunnel-nethack.conf">i2ptunnel-westnoth.conf</a> or copy-paste the section below.</p>
+<pre class="properties"><code>interface=127.0.0.1
+listenPort=15000
+name=nethack.idk.i2p
+option.i2cp.closeIdleTime=1800000
+option.i2cp.closeOnIdle=false
+option.i2cp.delayOpen=false
+option.i2cp.destination.sigType=7
+option.i2cp.leaseSetEncType=4,0
+option.i2cp.newDestOnResume=false
+option.i2cp.reduceIdleTime=1200000
+option.i2cp.reduceOnIdle=true
+option.i2cp.reduceQuantity=1
+option.i2p.streaming.connectDelay=0
+option.inbound.backupQuantity=2
+option.inbound.length=1
+option.inbound.lengthVariance=0
+option.inbound.nickname=nethack.idk.i2p
+option.inbound.quantity=3
+option.outbound.backupQuantity=2
+option.outbound.length=1
+option.outbound.lengthVariance=0
+option.outbound.nickname=nethack.idk.i2p
+option.outbound.quantity=3
+option.persistentClientKey=true
+option.useSSL=false
+privKeyFile=i2ptunnel-nethack-privKeys.dat
+sharedClient=false
+startOnLoad=true
+targetDestination=ceqcdeghiqxntcq2o4mp7akbq36vg3vwy7dgltbujx46deckjwsa.b32.i2p
+type=client</code></pre>
+</body>
+</html>
