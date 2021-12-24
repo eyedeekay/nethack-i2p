@@ -68,6 +68,6 @@ option.useSSL=false
 privKeyFile=i2ptunnel-nethack-privKeys.dat
 sharedClient=false
 startOnLoad=true
-targetDestination=ceqcdeghiqxntcq2o4mp7akbq36vg3vwy7dgltbujx46deckjwsa.b32.i2p
+targetDestination=zcojbufszefu5bfht5cem3zlhfvv5y3jzpzbaccu3ehje4d7pb2a.b32.i2p
 type=client
 ```
