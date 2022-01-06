@@ -36,7 +36,7 @@ telnet localhost 7680
 ```
 
 If you would rather set up your tunnel by dropping in a configuration file,
-you can use this one: [i2ptunnel-nethack.conf](i2ptunnel-nethack.conf) or
+you can use this one: [i2ptunnel-nethack.conf](i2ptunnel-nethack.config) or
 copy-paste the section below.
 
 ```properties
